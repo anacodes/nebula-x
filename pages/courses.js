@@ -2,7 +2,7 @@ import CourseList from './../components/course/CourseList';
 import { useRouter } from "next/router"
 import { useEffect, useState } from 'react'
 
-function allCourses({queryType, queryVal}) {
+function AllCourses({queryType, queryVal}) {
 
     const [courses, setCourses] = useState([]);
     useEffect(() => {
@@ -26,7 +26,7 @@ function allCourses({queryType, queryVal}) {
     return <CourseList courses={courses}/>
 }
 
-allCourses.getInitialProps = ({query: { queryType, queryVal }}) => {
+AllCourses.getInitialProps = ({query: { queryType, queryVal }}) => {
     return {queryType, queryVal}
 }
-export default allCourses;
+export default AllCourses;

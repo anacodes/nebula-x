@@ -31,7 +31,7 @@ function CourseDetails(props) {
         <h4>Professor Ratings:</h4>
         <div className='row'>
             {obj_keys.map((obj) => (
-                <div className="col-12 col-sm-6">
+                <div className="col-12 col-sm-6"  key={obj}>
                     <Professor
                         key={obj}
                         id={obj}
@@ -52,7 +52,7 @@ function CourseDetails(props) {
             <ul className={classes.list}>
                 {new_keys.map((obj) => (
                 // <h3>{props.new_profs[obj]['prof_name']}</h3>
-                <h5 className="card-title py-0">{props.new_profs[obj]['prof_name'].charAt(0).toUpperCase()+props.new_profs[obj]['prof_name'].slice(1)}</h5>
+                <h5 className="card-title py-0" key={obj}>{props.new_profs[obj]['prof_name'].charAt(0).toUpperCase()+props.new_profs[obj]['prof_name'].slice(1)}</h5>
                 ))}
             </ul></div>     
         </Fragment>
