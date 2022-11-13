@@ -7,6 +7,7 @@ const { parsed: myEnv } = require('dotenv').config({
 
 const nextConfig = {
   reactStrictMode: true,
+  future: { webpack5: true },
   webpack(config) {
     config.plugins.push(new webpack.EnvironmentPlugin(myEnv))
     return config
