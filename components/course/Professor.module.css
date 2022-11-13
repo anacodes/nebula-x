@@ -1,0 +1,12 @@
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+.card {
+    width: 8rem;
+    margin-bottom: 5px;
+  }
+.list-group-item {
+  border: 0;
+}
